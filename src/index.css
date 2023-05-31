@@ -92,7 +92,7 @@ button:hover:not(.orange) {
   font-size: 1.5em;
 }
 
-.App{
-    display: grid;
-    gap: 50px;
+.App {
+  display: grid;
+  gap: 50px;
 }
