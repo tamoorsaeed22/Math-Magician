@@ -95,7 +95,7 @@ button:hover:not(.orange) {
 
 .App {
   display: flex;
-  gap: 1150px;
+  gap: 1155px;
 }
 
 .message {
