@@ -23,3 +23,8 @@
   background-color: black;
   color: azure;
 }
+
+header {
+  display: flex;
+  gap: 1350px;
+}
