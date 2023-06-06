@@ -96,3 +96,10 @@ button:hover:not(.orange) {
   display: grid;
   gap: 50px;
 }
+
+.message {
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+}
+

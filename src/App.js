@@ -1,13 +1,21 @@
+import { Routes, Route } from 'react-router-dom';
 import Calculator from './components/calculator';
-import FetchQuote from './components/FetchQuote';
+import DisplayQuote from './components/FetchQuote';
+import Header from './components/Header';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Math Magicians</h1>
-      <Calculator />
-      <FetchQuote />
-    </div>
+    <>
+      <Header />
+      <div className="App">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/quote" element={<DisplayQuote />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 

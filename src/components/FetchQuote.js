@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function DisplayQuote() {
   const [data, setData] = useState({});
@@ -16,10 +16,10 @@ export default function DisplayQuote() {
         const result = await response.json();
         setData(result[0]);
         setLoading(false);
-      } catch (error) {
+      } catch (e) {
         setError(true);
         setLoading(false);
-        throw new Error(error);
+        throw new Error(e);
       }
     }
     fetchQuote();
@@ -28,20 +28,24 @@ export default function DisplayQuote() {
   if (loading) {
     return (
       <section className="quote_display">
-        <h2>Quote</h2>
-        <p>Loading quote...</p>
+        <p style={{ fontSize: '1.3rem' }}>Loading quote...</p>
       </section>
     );
   }
 
   if (error || data === undefined) {
-    return <p>Encountered a problem while retrieving the quote</p>;
+    return (
+      <section className="quote_display">
+        <p style={{ fontSize: '1.3rem' }}>Encountered a problem while trying to get quote...</p>
+      </section>
+    );
   }
 
   return (
     <section className="quote_display">
-      <h2>Quote</h2>
-      <q>{data.quote}</q>
+      <q style={{ fontSize: '1.3rem' }}>
+        {data.quote}
+      </q>
       <p className="author">{data.author}</p>
     </section>
   );
