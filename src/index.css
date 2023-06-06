@@ -80,7 +80,8 @@ button:hover:not(.orange) {
 
 .quote_fetch {
   width: 500px;
-  margin-top: -3em;
+  margin-inline: auto;
+  margin-top: 6em;
 }
 
 .quote_fetch h2 {
@@ -93,6 +94,12 @@ button:hover:not(.orange) {
 }
 
 .App {
-  display: grid;
-  gap: 50px;
+  display: flex;
+  gap: 1150px;
+}
+
+.message {
+  justify-content: left;
+  align-items: center;
+  text-align: center;
 }
