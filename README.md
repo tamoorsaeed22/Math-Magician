@@ -77,7 +77,7 @@ _ **[React & javascript functions, modules, ES6 syntax, variables, etc]**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Comming Soon
+- (https://math-magician-project-m5ro.onrender.com)
 
 
 <!-- GETTING STARTED -->
